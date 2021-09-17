@@ -1,0 +1,14 @@
+name: lunatic-rankup
+version: 1.0
+author: SrGeneX
+main: br.com.lunaticmc.rankup.RankUP
+depend:
+  - lunatic-blocks
+softdepend:
+  - PlaceholderAPI
+  - nChat
+commands:
+  ranks:
+    aliases: [listaranks, rankslist, ranklist, ranklistar, listarranks, listarrank]
+  rankup:
+    aliases: [evoluir]

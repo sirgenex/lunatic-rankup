@@ -1,0 +1,125 @@
+permission: "lunatic.admin"
+ranks:
+  rank1: #primeiro rank
+    prefix: "&6[Rank I]"
+    price: #preço pra evoluir para o próximo rank
+      coins: 1
+      blocks: 1
+  rank2:
+    prefix: "&6[Rank II]"
+    price:
+      coins: 2
+      blocks: 2
+  rank3:
+    prefix: "&6[Rank III]"
+menus:
+  ranks:
+    title: "&8Lista de ranks"
+    hotbars: 3
+    decoration:
+      item: 160;15
+      name: "&7"
+    ranks:
+      rank:
+        slot: 10
+        skull-url: "2e9f592a12f123d6ea13a9e01920079f72e545f310476b019edf80eef809ae55"
+        name: "&7Rank"
+        lore:
+          - ""
+          - "&6[Rank I] &f> &6[Rank II]"
+          - "&aBlocos: &21"
+          - "&aCoins: &21"
+          - ""
+          - "&6[Rank II] &f> &6[Rank III]"
+          - "&aBlocos: &22"
+          - "&aCoins: &22"
+          - ""
+  rankup:
+    title: "&8Evoluir de rank"
+    hotbars: 3
+    decoration:
+      item: 160;15
+      name: "&7"
+    ranks:
+      item: 339;0
+      name: "&7Lista de ranks"
+      lore:
+        - ""
+        - "&aClique AQUI para abrir a lista de ranks."
+        - ""
+    info:
+      name: "&7Informações:"
+      lore:
+        - ""
+        - "&7Rank atual: {rank}"
+        - "&7Próximo rank: {next_rank}"
+        - "&7Preço:"
+        - " &8- {player_coins}/{coins} coins"
+        - " &8- {player_blocks}/{blocks} blocos"
+        - ""
+    info_last:
+      name: "&7Informações:"
+      lore:
+        - ""
+        - "&7Rank atual: {rank}"
+        - "&aGG! Você alcançou o último rank."
+        - ""
+    rankup_can:
+      item: 351;10
+      name: "&7Evoluir de rank"
+      lore:
+        - ""
+        - "&aClique AQUI para evoluir o seu rank."
+        - ""
+    rankup_cannot:
+      item: 351;8
+      name: "&7Evoluir de rank"
+      lore:
+        - ""
+        - "&cVocê não tem os requisitos para evoluir de rank."
+        - ""
+    rankup_last:
+      item: 351;1
+      name: "&7Evoluir de rank"
+      lore:
+        - ""
+        - "&cVocê já está no rank máximo."
+        - ""
+messages:
+  without_requisits:
+    - "&cVocê não tem os requisitos suficientes para evoluir de rank."
+  rankup:
+    - "&aVocê evoluiu para o rank {rank}"
+  last_rank:
+    - "&7Você já está no último rank."
+  without_permission:
+    - "&cVocê não tem permissão para executar esse comando."
+  help:
+    - "&6Comandos - LunaticRankUP"
+    - ""
+    - "&7/rankup setar (player) (rank) &8- &fSetar o rank de um jogador."
+    - "&7/rankup promover (player) &8- &fFazer um jogador dar rankup sem precisar de nenhum requisito."
+    - "&7/rankup rebaixar (player) &8- &fRebaixa um rank do jogador."
+    - "&7/rankup first (player) &8- &fSeta o primeiro rank em um jogador."
+    - "&7/rankup last (player) &8- &fSeta o último rank em um jogador."
+    - "&7/rankup tag (player) &8- &fHabilitar/desabilitar a tag de rank no chat."
+    - ""
+  inexistent_player:
+    - "&cEsse jogador nunca jogou no servidor."
+  inexistent_rank:
+    - "&cEsse rank não existe. Lista de ranks:"
+    - "@showRankList"
+  rank_setted:
+    - "&aVocê setou o rank {rank} &apara {player} com sucesso."
+  player_lastRank:
+    - "&aO jogador {player} já está no último rank."
+  player_firstRank:
+    - "&aO jogador {player} já está no primeiro rank."
+  player_promote:
+    - "&aO jogador {player} foi promovido para o rank {rank} &acom sucesso."
+  player_demote:
+    - "&aO jogador {player} foi rebaixado para o rank {rank} &acom sucesso."
+  tag_disabled:
+    - "&cO jogador {player} não irá mostrar a tag do rank no chat."
+  tag_enabled:
+    - "&aO jogador {player} irá mostrar a tag do rank no chat."
